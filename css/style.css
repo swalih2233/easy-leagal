@@ -1,0 +1,507 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+@font-face {
+  font-family: 'martelbold';
+  src: url('../fonts/martel-bold-webfont.woff2') format('woff2'),
+       url('../fonts/martel-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'martelregular';
+  src: url('../fonts/martel-regular-webfont.woff2') format('woff2'),
+       url('../fonts/martel-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src:url('../fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+body {
+  font-family: 'Montserrat-regular';
+}
+
+:root {
+  
+  --primary-color: #D0A144;
+  --dark-background-color: #04251f;
+  --light-blue:#0F6A9F;
+  --secondary-color: #295C7A;
+  --second-text-color:#737373;
+}
+#home{
+  background-color: #5e8582;
+}
+#home header{
+
+  height: 100px;
+  
+
+}
+#home header section.wrapper{
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+}
+#home header section.wrapper div.middle ul{
+  display: flex;
+  justify-content: space-between;
+  
+}
+#home header section.wrapper div.middle ul li a{
+  margin-right: 20px;
+  color: #fff;
+}
+#home header section.wrapper div.left h1 a{
+  font-size: 24px;
+  font-weight: 500;
+  color: #fff;
+}
+#spotlight{
+  background-color: #5e8582;
+}
+#spotlight .wrapper div.item{
+  display: flex;
+}
+#spotlight .wrapper div.one h3{
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  color: #fff;
+  margin-top: 20%;
+}
+#spotlight .wrapper div.one p{
+  font-size: 16px;
+  font-weight: 100;
+  color: #e0dfdf;
+  margin-bottom: 30px;
+}
+#spotlight .wrapper div.one ul{
+  display: flex;
+ 
+}
+#spotlight .wrapper div.one ul li{
+  margin-right: 30px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  padding: 12px 16px;
+ 
+  
+}
+#spotlight .wrapper div.one ul li a{
+  color: #fff;
+  font-weight: 300;
+  font-size: 12px;}
+#spotlight .wrapper div.one ul li:first-child{
+  background-color: var(--primary-color);
+  border: none;
+}
+#spotlight .wrapper div.two{
+ display: block;
+
+}
+#spotlight .wrapper div.two img{
+  padding: 0 60px 0 60px;
+  display: block;
+  
+}
+#features{
+  height: 100vh;
+  background-color: var(--dark-background-color);
+}
+#features .wrapper{
+  height: 100%;
+  text-align: center;
+}
+#features .wrapper h1{
+ padding: 70px;
+ color: #fff;
+ font-size: 34px;
+ font-weight: 700;
+}
+#features .wrapper p{
+  font-size: 12px;
+  color: #e0dfdf;
+  margin-bottom: 60px;
+  margin-top: -40px;
+}
+#features .wrapper div.one ul{
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+  
+}
+#features .wrapper div.one ul li{
+  border: 1px solid;
+  height: 150px;
+  width: 400px;
+  margin-right: 30px;
+  background-color:#fff;
+}
+#features .wrapper div.one ul li:nth-child(2){
+  background-color: var(--light-blue);
+}
+#features .wrapper div.one ul li a img{
+  padding: 20px;
+}
+#features .wrapper div.one ul li h2{
+  font-size: 20px;
+}
+#features .wrapper div.ab h3{
+  margin-top: 100px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+#features .wrapper div.ab p{
+  margin-top: 20px;
+}
+
+#highlits {
+  background-color: var(--dark-background-color);
+  padding: 0 0 120px 0;
+}
+
+#highlits .wrapper{}
+
+#highlits div.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+#highlits div.container div.card{
+  background: #fff;
+  width: 22%;
+}
+
+#highlits div.container div.card h2{
+  padding:0  24px;
+  margin-bottom: 16px;
+  margin-top: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+#highlits div.container div.card p{
+  padding: 0 24px;
+  margin-bottom: 16px;
+}
+
+#highlits div.container div.card img{
+  width: 100%;
+  display: block;
+}
+#highlits .wrapper div.two{
+  text-align: center;
+  margin-top: 20px;
+}
+#highlits .wrapper div.two h1{
+  margin-top: 15%;
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+} 
+#highlits .wrapper div.two p{
+  color: #e0dfdf;
+}
+#highlits .wrapper div.two p{
+  color: #e0dfdf;
+}
+
+#middle{
+  background-color: var(--dark-background-color);
+}
+#middle .wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#middle .wrapper div.left{
+  width: 48%;
+  position: relative;
+
+}
+#middle .wrapper div.left .image1{
+  width: 100%;
+  display: block;
+}
+#middle .wrapper div.left div.play{
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 100px;
+  height: 100px;
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#middle .wrapper div.left div.play img{}
+#middle .wrapper div.right{
+  width: 48%;
+  color: white;
+ 
+}
+#middle .wrapper div.right h1{
+  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+}
+#middle .wrapper div.right p.one{
+  width: 60%;
+  color: #e0dfdf;
+  margin-bottom: 20px;
+}
+#middle .wrapper div.right div.item{
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+#middle .wrapper div.right div.item img{
+  margin-right: 16px;
+}
+#middle .wrapper div.right div.item p{
+  margin-right: 40px;
+  margin-bottom: 30px;
+}
+.aa{
+  margin-top: 60px;
+  text-align: center;
+}
+.aa h1{
+  color: #fff;
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.aa p{
+  font-size: 16px;
+  color: #e0dfdf;
+}
+
+
+
+
+#last {
+  height: 100vh;
+  background-color: var(--dark-background-color);
+}
+#last .wrapper{
+  text-align: center;
+  margin-top: 10%;
+}
+#last .wrapper h2{
+  font-size: 34px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#last .wrapper p{
+  color: #e0dfdf;
+  font-size: 12px;
+}
+#last .wrapper div.box{
+  display: flex;
+  justify-content: center;
+  padding: 80px;
+}
+#last .wrapper div.box ul{
+  border: 1px solid;
+  height: 350px;
+  width: 400px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border: none;
+
+
+ 
+ 
+}
+#last .wrapper div.box ul li{
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  
+  
+}
+#last .wrapper div.box ul li img{
+  margin-top: 40px;
+}
+#last .wrapper div.box ul:nth-child(2){
+  background-color: var(--light-blue);
+  height: 400px;
+  width: 300px;
+  margin-top: -30px;
+  padding: 60px;
+  
+}
+#last .wrapper div.box ul li img:nth-child(2){
+
+}
+#last .wrapper div.box ul li h1{
+  font-size: 24px;
+  font-weight: 600;
+}
+#last .wrapper div.box ul li a.button{
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 12px 19px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+#last .wrapper div.box ul li a.button:nth-child(2){
+ border: 1px solid #fff;
+}
+#request{
+  padding: 40px 0;
+}
+#request section.wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+#request section.wrapper div.left{
+
+}
+#request section.wrapper div.left h2{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#request section.wrapper div.left p{
+  color: #fff;
+}
+#request section.wrapper div.right1{
+
+}
+#request section.wrapper div.right1 a.button{
+  padding: 15px 40px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: #fff;
+ 
+}
+
+
+
+
+#footer{
+  padding: 30px;
+  height: 100%;
+  background-color: var(--light-blue);
+  
+}
+#footer div.item2 h1{
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fff;
+  
+ 
+}
+#footer div.item2 ul li{
+  margin-bottom: 10px;
+  color: #e0dfdf;
+}
+#footer div.item2 ul li img{
+  height:20px;
+  margin-right: 10px;
+  
+}
+
+#end{
+  height: 100px;
+  background-color: var(--dark-background-color);
+  padding: 30px;
+}
+#end .wrapper{
+  display: flex;
+  justify-content: space-between;
+}
+#end .wrapper ul{
+display: flex;
+justify-content: end;
+
+  
+}
+#end .wrapper p{
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
+}
+#end .wrapper ul li{
+  margin-right: 30px;
+ 
+}
+#end .wrapper ul li img{
+  
+}
+
+
+
+  
+
+
+
+  
+  
+
+
+
+
+
+ 
+
+
+
+
+
+
+
